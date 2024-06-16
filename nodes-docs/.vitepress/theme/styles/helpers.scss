@@ -1,0 +1,43 @@
+.gradient-text {
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#VPContent {
+  &:not(.is-home) {
+    .container, .content, .content-container {
+      max-width: none;
+    }
+  }
+}
+
+/* h5模拟器样式 */
+.aside-container {
+  width: auto !important;
+}
+.for-simulator-padding {
+  .content__default:not(.custom) {
+    padding-right: initial !important;
+  }
+
+  .page {
+    padding-right: 320px !important;
+
+    .side-bar {
+      position: fixed;
+      top: 4rem;
+      bottom: 40rem;
+      right: 2rem;
+      overflow-y: scroll;
+    }
+  }
+  @media (max-width: 1200px) {
+    .page {
+      padding-right: 10px !important;
+    }
+  }
+}
